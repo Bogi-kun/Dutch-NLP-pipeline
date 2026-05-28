@@ -223,11 +223,7 @@ __marimo__/
 
 # Large datasets
 Dataset/Lassy_small_corpus/*.err
-src/Lexicon/LexiconData/molex_22_02_2022.tsv
-src/Lexicon/LexiconData/molex.db
-src/Lexicon/LexiconData/separable_parts.txt
-src/Lexicon/LexiconData/lexicon_stats.json
-src/Lexicon/LexiconData/mappings.json
+
 Dataset/training_data
 Dataset/training_data_binaries
 

@@ -1,10 +1,10 @@
 import spacy
 
-from src.Inference.NLP_pipeline import NLP_Pipeline
+from src.Inference.NLP_pipeline import NLP_Pipeline as nlp
 
 if __name__ == "__main__":
     # Initialize pipeline (loads from default paths)
-    pipeline = NLP_Pipeline("nl_lg")
+    pipeline = nlp("nl_lg")
 
     while True:
         sentence = input("Enter sentence: ")
