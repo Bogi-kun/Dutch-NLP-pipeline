@@ -1,4 +1,4 @@
-from src.Inference.NLP_pipeline import NLP_Pipeline# Dutch NLP Pipeline
+# Dutch NLP Pipeline
 ---
 A morphosyntactic pipeline optimized for grammatical analysis of Dutch sentences built from scratch. The pipeline includes a multitask neural model trained on LassySmall corpus containing around 65000 sentences (1 million tokens) annotated with POS tags, lemmas, and syntactic dependencies.
 ## Setup Instructions
