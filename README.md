@@ -6,7 +6,7 @@ A morphosyntactic pipeline optimized for grammatical analysis of Dutch sentences
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/Bogi-kun/Dutch-NLP-pipeline.git](https://github.com/Bogi-kun/Dutch-NLP-pipeline.git)
+git clone https://github.com/Bogi-kun/Dutch-NLP-pipeline.git
 cd Dutch-NLP-pipeline
 ```
 
