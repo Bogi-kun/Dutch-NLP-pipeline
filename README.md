@@ -68,3 +68,21 @@ index           Token           Lemma           True_Lemma      POS        DEP  
 6               .               .               .               PUNCT      2        punct          
 ====================================================================================================
 ```
+
+## Architecture
+
+The following diagram show's the architecture of the whole pipeline:
+
+<img width="484" height="819" alt="Untitled Diagram drawio(1)" src="https://github.com/user-attachments/assets/d4967563-610d-4dc1-b424-74b0730fdc41" />
+
+Here are some remarks worth mentioning about the model's architecture:
+- Lexicon does not resolve the ambiguity before entering model. It only gives useful heuristics about given tokens; e.g., ```ruim``` can be noun, verb or an adjective.
+- A small residual transformer encoder was added after biLSTM to more reliably capture long range dependencies, which are common in Dutch.
+- Lemmatizer takes all 3 morphosyntactic tags to correctly lemmatize separable verbs, since the position of a separable particle is dictated by the syntax.
+- Lemmatizer can be used only for words present in Lexicon, meaning out-of-vocabulary tokens cannot be lemmatized.
+
+## Evaluation of the model
+
+Performance of the models was evaluated on a test sample from lassySmall corpus and benchmarked against ```Spacy``` and ```Stanza``` Dutch NLP pipelines. 
+
+
