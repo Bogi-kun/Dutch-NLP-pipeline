@@ -1,0 +1,86 @@
+{
+  "Abbr": {
+    "_": 0,
+    "Yes": 1
+  },
+  "Case": {
+    "_": 0,
+    "Acc": 1,
+    "Dat": 2,
+    "Gen": 3,
+    "Nom": 4
+  },
+  "Definite": {
+    "_": 0,
+    "Def": 1,
+    "Ind": 2
+  },
+  "Degree": {
+    "_": 0,
+    "Cmp": 1,
+    "Pos": 2,
+    "Sup": 3
+  },
+  "ExtPos": {
+    "_": 0,
+    "PRON": 1,
+    "SCONJ": 2
+  },
+  "Foreign": {
+    "_": 0,
+    "Yes": 1
+  },
+  "Gender": {
+    "_": 0,
+    "Com": 1,
+    "Com,Neut": 2,
+    "Neut": 3
+  },
+  "Mood": {
+    "_": 0,
+    "Ind": 1
+  },
+  "Number": {
+    "_": 0,
+    "Plur": 1,
+    "Sing": 2
+  },
+  "Person": {
+    "_": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3
+  },
+  "Poss": {
+    "_": 0,
+    "Yes": 1
+  },
+  "PronType": {
+    "_": 0,
+    "Art": 1,
+    "Dem": 2,
+    "Exc": 3,
+    "Ind": 4,
+    "Int": 5,
+    "Neg": 6,
+    "Prs": 7,
+    "Rcp": 8,
+    "Rel": 9,
+    "Tot": 10
+  },
+  "Reflex": {
+    "_": 0,
+    "Yes": 1
+  },
+  "Tense": {
+    "_": 0,
+    "Past": 1,
+    "Pres": 2
+  },
+  "VerbForm": {
+    "_": 0,
+    "Fin": 1,
+    "Inf": 2,
+    "Part": 3
+  }
+}
