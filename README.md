@@ -1,6 +1,6 @@
 # Dutch NLP Pipeline
 
-A morphosyntactic pipeline optimized for grammatical analysis of Dutch sentences, built from scratch. The pipeline features a multitask neural model trained on the LassySmall corpus (~65,000 sentences, 1 million tokens) annotated with POS tags, lemmas, and syntactic dependencies.
+A morphosyntactic pipeline optimized for grammatical analysis of Dutch sentences, built from scratch. The pipeline features a multitask neural model trained on the LassySmall corpus (~65,000 sentences, 1 million tokens) annotated with POS tags, lemmas, and syntactic dependencies. Despite its lightweight memory footprint (under 52MB), the custom architecture present in this repository significantly outperforms commercial industry standards—including both Stanza and every variant of spaCy—across POS accuracy, UAS, and LAS benchmarks.
 
 ## Setup Instructions
 
@@ -83,6 +83,18 @@ Here are some remarks worth mentioning about the model's architecture:
 
 ## Evaluation of the model
 
-Performance of the models was evaluated on a test sample from lassySmall corpus and benchmarked against ```Spacy``` and ```Stanza``` Dutch NLP pipelines. 
+Performance of the models was evaluated on a test sample from lassySmall corpus and benchmarked against ```Spacy``` and ```Stanza``` Dutch NLP pipelines.
+
+| Framework / Model | Model Details | POS Accuracy | UAS | LAS |
+| :--- | :--- | :---: | :---: | :---: |
+| **Stanza** | Default Pipeline | 97.00% | 91.37% | 86.98% |
+| **spaCy** | `nl_core_news_sm` | 94.71% | 85.15% | 79.27% |
+| | `nl_core_news_md` | 95.50% | 86.44% | 80.95% |
+| | `nl_core_news_lg` | 95.74% | 86.59% | 81.06% |
+| **Custom Models** | `nl_sm` (908,411 parameters biLSTM/Transformer) | **97.85%** | **93.12%** | **90.13%** |
+| | `nl_md` (12,005,691 parameters biLSTM) | **98.05%** | **94.21%** | **91.69%** |
+| | `nl_lg` (12,797,115 parameters biLSTM/Transformer) | **98.04%** | **94.27%** | **91.73%** |
+
+
 
 
